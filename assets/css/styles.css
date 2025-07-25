@@ -1,0 +1,138 @@
+.test {
+    padding: 10px;
+    border: 1px dashed #ccc;
+}
+
+
+/* Background Opaco (Black) */
+
+.lens {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+}
+
+.lens.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Icon Menu Mobile */
+
+.icon_menu {
+    position: relative;
+    margin: 12px 6px;
+    padding: 4px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.icon_menu span {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: var(--gray);
+}
+
+.icon_menu span::before,
+.icon_menu span::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--gray);
+}
+
+.icon_menu span::before {
+    top: -7px;
+}
+
+.icon_menu span::after {
+    top: 7px;
+}
+
+
+/* Conteúdo do Menu Mobile */
+
+.content_menu_mobile {
+    padding: 8px;
+    position: absolute;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    top: 0;
+    left: -300px;
+    background-color: var(--white);
+    display: flex;
+    transition: all .4s ease-in-out;
+    z-index: 1000;
+}
+
+.content_menu_mobile.open {
+    left: 0;
+    transition: all .4s ease-in-out;
+}
+
+.content_mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1100;
+    background-color: var(--white);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.content_mobile::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.logotipo_mobile {
+    display: block;
+}
+
+.logotipo_mobile img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.menu_mobile_box {
+    width: 100%;
+    padding: 20px 5px 0 5px;
+}
+
+.menu_mobile_box p {
+    color: var(--blue_light);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content_mobile a {
+    color: var(--navy_blue);
+    font-weight: bold;
+    padding: 14px 5px;
+    border-bottom: 1px dashed var(--corporate_pen);
+}
+
+
+/* Conteúdo do Menu Web */
+
+.content_menu_web {
+    display: none;
+}

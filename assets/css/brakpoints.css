@@ -1,0 +1,26 @@
+/* 960px */
+
+@media(min-width: 60em) {
+    /* ==================================================
+        Estruturas do Layout 
+    ================================================== */
+    .box-large {
+        flex-basis: calc(50% - 10px);
+    }
+    .box-medium {
+        flex-basis: calc(33.33% - 10px);
+    }
+    .box-small {
+        flex-basis: calc(25% - 10px);
+    }
+    /* ==================================================
+        Estilizações independentes 
+    ================================================== */
+    .icon_menu,
+    .content_menu_mobile {
+        display: none;
+    }
+    .content_menu_web {
+        display: flex;
+    }
+}
