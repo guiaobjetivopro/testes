@@ -4,7 +4,7 @@
 }
 
 
-/* Background Opaco (Black) */
+/* Background que ofusca o que está por trás (na cor Black) */
 
 .lens {
     position: fixed;
@@ -68,7 +68,7 @@
 /* Conteúdo do Menu Mobile */
 
 .content_menu_mobile {
-    padding: 8px;
+    /* padding: 8px; */
     position: absolute;
     width: 80%;
     max-width: 300px;
@@ -87,6 +87,7 @@
 }
 
 .content_mobile {
+    padding: 8px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -129,6 +130,82 @@
     padding: 14px 5px;
     border-bottom: 1px dashed var(--corporate_pen);
 }
+
+.main_redes_sociais {
+    width: 100%;
+    margin: 25px 0;
+    background-image: url("../images/jpeg/multimidia_car.jpg");
+    background-position: top -60px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_redes_sociais p {
+    text-align: center;
+    color: var(--nav_blue_light);
+    font-weight: bold;
+    /* margin-top: -30px; */
+}
+
+.redes_sociais {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 60px 5%;
+    background-color: var(--gray-clean);
+    padding: 30px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.5);
+}
+
+.redes_sociais p {
+    font-size: 1.2rem;
+    width: 80%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--navy_blue);
+    padding: 10px 20px;
+    color: var(--white);
+    border-radius: 100px;
+}
+
+.redes_sociais .icon {
+    width: 44px;
+    height: 44px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--black);
+    transition: all .2s ease-in-out;
+}
+
+.icon-facebook {
+    background-image: url("../images/icons/facebook.png");
+}
+
+.icon-instagram {
+    background-image: url("../images/icons/instagram.png");
+}
+
+.icon-youtube {
+    background-image: url("../images/icons/youtube.png");
+}
+
+.icon-whatsapp {
+    background-image: url("../images/icons/whatsapp.png");
+}
+
+
+/* .redes_sociais .icon:hover .icon-facebook {
+    background-image: none;
+} */
 
 
 /* Conteúdo do Menu Web */

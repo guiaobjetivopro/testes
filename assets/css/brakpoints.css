@@ -13,9 +13,16 @@
     .box-small {
         flex-basis: calc(25% - 10px);
     }
+}
+
+
+/* 1008px */
+
+@media(min-width: 63em) {
     /* ==================================================
         Estilizações independentes 
     ================================================== */
+    .lens,
     .icon_menu,
     .content_menu_mobile {
         display: none;
@@ -23,4 +30,40 @@
     .content_menu_web {
         display: flex;
     }
+    .menu_web {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu_web a {
+        text-align: center;
+        padding: 10px;
+        background-color: var(--grayish_blue);
+        min-width: 160px;
+        font-size: 1.2rem;
+        margin: 0 4px;
+        border-radius: 100px;
+        color: var(--navy_blue);
+        font-weight: 700;
+    }
 }
+
+
+/* 1120px */
+
+@media(min-width: 70em) {}
+
+
+/* 1280px */
+
+@media(min-width: 80em) {}
+
+
+/* 1440px */
+
+@media(min-width: 90em) {}
+
+
+/* 1600px + */
+
+@media(min-width: 100em) {}
