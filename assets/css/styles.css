@@ -144,7 +144,6 @@
     text-align: center;
     color: var(--nav_blue_light);
     font-weight: bold;
-    /* margin-top: -30px; */
 }
 
 .redes_sociais {
@@ -202,10 +201,12 @@
     background-image: url("../images/icons/whatsapp.png");
 }
 
-
-/* .redes_sociais .icon:hover .icon-facebook {
-    background-image: none;
-} */
+.content_header_logotipo {
+    /* padding: 15px; */
+    background-color: var(--white);
+    box-shadow: var(--shadow-down);
+    margin-top: -30px;
+}
 
 
 /* Conteúdo do Menu Web */
