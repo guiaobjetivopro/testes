@@ -81,6 +81,10 @@ img {
     display: block;
 }
 
+iframe {
+    border: 0;
+}
+
 
 /* ========================================
 Fonte Complementar
