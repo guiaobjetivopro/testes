@@ -150,6 +150,21 @@
     .content_menu_mobile {
         display: none;
     }
+    .reveal-top {
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: slideInTop 0.8s ease-out forwards;
+    }
+    @keyframes slideInTop {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
     .content_menu_web {
         display: flex;
     }
@@ -200,6 +215,9 @@
 /* 1120px */
 
 @media(min-width: 70em) {
+    .content_header_logotipo>.box>.box-large:nth-child(1) {
+        flex-basis: 30%;
+    }
     .header_logotipo_call p {
         font-size: 2.6rem;
     }
@@ -209,12 +227,6 @@
 /* 1280px */
 
 @media(min-width: 80em) {
-    /* .content_header_logotipo>.box {
-        justify-content: space-evenly;
-    } */
-    .content_header_logotipo>.box>.box-large:nth-child(1) {
-        flex-basis: 30%;
-    }
     .header_logotipo_call {
         max-width: 560px;
         padding: 10px 0;

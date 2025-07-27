@@ -4,6 +4,42 @@
     background-color: green;
 }
 
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    /* Começa 50px à esquerda */
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    /* Começa 50px à direita */
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 /* Background que ofusca o que está por trás (na cor Black) */
 
@@ -147,17 +183,22 @@
     font-weight: bold;
 }
 
+.glass {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .redes_sociais {
     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    margin: 60px 5%;
-    background-color: var(--gray-clean);
+    width: 94%;
+    margin: 85px 3%;
     padding: 30px 15px 15px;
     border-radius: 10px;
-    box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.5);
 }
 
 .redes_sociais p {
@@ -214,13 +255,7 @@
     align-items: center;
 }
 
-
-/* .logotipo img {
-    max-width: 310px;
-} */
-
 .header_logotipo_call {
-    /* max-width: 340px; */
     padding: 10px 0;
 }
 
