@@ -369,7 +369,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 20px 0;
+    margin-top: 20px;
     padding: 10px 0;
     border-top: 1px dashed var(--black);
     border-bottom: 1px dashed var(--black);
@@ -380,6 +380,7 @@
 .satisfaction,
 .experience {
     padding: 6px;
+    width: 100%;
 }
 
 .satisfaction {
@@ -396,16 +397,84 @@
     font-weight: 900;
 }
 
-
-/* 
-.satisfaction_number {
-    padding-bottom: 15px;
-} */
-
 .guarantee_text,
 .satisfaction_text,
 .experience_text {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.call_to_action a {
+    padding: 20px;
+    background-color: var(--navy_blue);
+    color: var(--white);
+    border: 3px solid var(--white);
+    display: block;
+    text-align: center;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    box-shadow: 0px 10px 15px -8px rgba(0, 0, 0, 0.7);
+}
+
+.call_to_action p {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.full {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Necessário para posicionar a seta */
+    padding: 2rem;
+    text-align: center;
+}
+
+.arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px 5px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.arrow img {
+    width: 40px;
+}
+
+.seta-baixo {
+    display: inline-block;
+    font-size: 2rem;
+    color: #FF6600;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.setas {
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
 }
 
 
