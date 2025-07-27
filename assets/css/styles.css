@@ -1,6 +1,7 @@
 .test {
-    padding: 10px;
-    border: 1px dashed #ccc;
+    /* padding: 10px; */
+    /* border: 1px dashed #ccc; */
+    background-color: green;
 }
 
 
@@ -202,10 +203,33 @@
 }
 
 .content_header_logotipo {
-    /* padding: 15px; */
     background-color: var(--white);
     box-shadow: var(--shadow-down);
     margin-top: -30px;
+}
+
+.logotipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .logotipo img {
+    max-width: 310px;
+} */
+
+.header_logotipo_call {
+    /* max-width: 340px; */
+    padding: 10px 0;
+}
+
+.header_logotipo_call p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--nav_blue_light);
+    font-weight: 900;
 }
 
 

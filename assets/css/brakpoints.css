@@ -1,3 +1,116 @@
+/* 320 px */
+
+@media(min-width: 20em) {}
+
+
+/* 360 px */
+
+@media(min-width: 22.5em) {}
+
+
+/* 375 px */
+
+@media(min-width: 23.4375em) {}
+
+
+/* 390 px */
+
+@media(min-width: 24.375em) {}
+
+
+/* 414 px */
+
+@media(min-width: 25.875em) {
+    .logotipo img {
+        max-width: 350px;
+    }
+}
+
+
+/* 428 px */
+
+@media(min-width: 26.75em) {}
+
+
+/* 480 px */
+
+@media(min-width: 30em) {}
+
+
+/* 514 px */
+
+@media(min-width: 32.125em) {
+    .header_logotipo_call {
+        max-width: 450px;
+    }
+}
+
+
+/* 596 px */
+
+@media(min-width: 37.25em) {}
+
+
+/* 600 px */
+
+@media(min-width: 37.5em) {}
+
+
+/* 656px */
+
+@media(min-width: 41em) {
+    .content_header_logotipo>.box>.box-large {
+        flex-basis: calc(50% - 10px);
+        margin: 5px;
+    }
+    .content_header_logotipo {
+        padding-bottom: 20px;
+    }
+    .logotipo img {
+        max-width: 285px;
+    }
+}
+
+
+/* 768px */
+
+@media(min-width: 48em) {
+    .logotipo img {
+        max-width: 320px;
+    }
+    /*
+    .content_header_logotipo {
+        padding-bottom: 20px;
+    } */
+    .header_logotipo_call p {
+        font-size: 2rem;
+    }
+}
+
+
+/* 820 px */
+
+@media(min-width: 51.25em) {}
+
+
+/* 832px */
+
+@media(min-width: 52em) {
+    .header_logotipo_call p {
+        font-size: 2rem;
+    }
+}
+
+
+/* 912 px */
+
+@media(min-width: 57em) {
+    .header_logotipo_call p {
+        font-size: 2.2rem;
+    }
+}
+
+
 /* 960px */
 
 @media(min-width: 60em) {
@@ -12,6 +125,16 @@
     }
     .box-small {
         flex-basis: calc(25% - 10px);
+    }
+    .logotipo img {
+        max-width: 350px;
+    }
+    .header_logotipo_call {
+        max-width: 100%;
+        padding: 10px 0;
+    }
+    .header_logotipo_call p {
+        font-size: 2.2rem;
     }
 }
 
@@ -52,17 +175,59 @@
         color: var(--white);
         transition: all .3s ease-out;
     }
+    .content_header_logotipo {
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    .logotipo img {
+        max-width: 100%;
+    }
+    .header_logotipo_call p {
+        font-size: 2.4rem;
+    }
+}
+
+
+/* 1024 px */
+
+@media(min-width: 64em) {
+    .header_logotipo_call p {
+        font-size: 2.4rem;
+    }
 }
 
 
 /* 1120px */
 
-@media(min-width: 70em) {}
+@media(min-width: 70em) {
+    .header_logotipo_call p {
+        font-size: 2.6rem;
+    }
+}
 
 
 /* 1280px */
 
-@media(min-width: 80em) {}
+@media(min-width: 80em) {
+    /* .content_header_logotipo>.box {
+        justify-content: space-evenly;
+    } */
+    .content_header_logotipo>.box>.box-large:nth-child(1) {
+        flex-basis: 30%;
+    }
+    .header_logotipo_call {
+        max-width: 560px;
+        padding: 10px 0;
+    }
+    .header_logotipo_call p {
+        font-size: 3rem;
+    }
+}
+
+
+/* 1366 px */
+
+@media(min-width: 85.375em) {}
 
 
 /* 1440px */
