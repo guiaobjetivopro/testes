@@ -7,29 +7,25 @@
 .reveal-left {
     opacity: 0;
     transform: translateX(-50px);
-    /* Começa 50px à esquerda */
     animation: slideInLeft 0.8s ease-out forwards;
 }
 
 .reveal-right {
     opacity: 0;
     transform: translateX(50px);
-    /* Começa 50px à direita */
     animation: slideInRight 0.8s ease-out forwards;
 }
 
 .reveal-top {
     opacity: 0;
     transform: translateY(-50px);
-    /* Começa 50px à esquerda */
     animation: slideInTop 0.8s ease-out forwards;
 }
 
-.reveal-botton {
+.reveal-bottom {
     opacity: 0;
     transform: translateY(-50px);
-    /* Começa 50px à direita */
-    animation: slideInBotton 0.8s ease-out forwards;
+    animation: slideInBottom 0.8s ease-out forwards;
 }
 
 @keyframes slideInTop {
@@ -43,7 +39,7 @@
     }
 }
 
-@keyframes slideInBotton {
+@keyframes slideInBottom {
     from {
         opacity: 0;
         transform: translateY(-50px);
@@ -142,7 +138,7 @@
 
 .content_menu_mobile {
     /* padding: 8px; */
-    position: absolute;
+    position: fixed;
     width: 80%;
     max-width: 300px;
     height: 100%;
@@ -342,6 +338,74 @@
 
 .call_to_play_video b {
     text-transform: uppercase;
+}
+
+.content_data_call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.carplay_android_auto {
+    font-size: 2.0rem;
+    color: var(--blue_light);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+}
+
+.multimedia_guarantee {
+    padding-top: 8px;
+    font-size: 1.8rem;
+    color: var(--black);
+    text-align: center;
+    font-weight: 700;
+}
+
+.result_numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px dashed var(--black);
+    border-bottom: 1px dashed var(--black);
+    text-align: center;
+}
+
+.guarantee,
+.satisfaction,
+.experience {
+    padding: 6px;
+}
+
+.satisfaction {
+    padding: 0 30px;
+    border-right: 1px dashed var(--black);
+    border-left: 1px dashed var(--black);
+}
+
+.guarantee_year,
+.satisfaction_number,
+.experience_year {
+    font-size: 2.7rem;
+    color: var(--navy_blue);
+    font-weight: 900;
+}
+
+
+/* 
+.satisfaction_number {
+    padding-bottom: 15px;
+} */
+
+.guarantee_text,
+.satisfaction_text,
+.experience_text {
+    font-size: 1.25rem;
 }
 
 
